@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<%- include('../partials/head.ejs') %>
+
+  <body class="container">
+
+    <%- include('../partials/header.ejs') %>
+
+      <main>
+        <div class="jumbotran">
+          <h1>Node com EJS</h1>
+          <p>HTML com Bootstrap é bem mais facil!</p>
+        </div>
+        <ul>
+          <% bread.forEach(function(bread){ %>
+          <li>
+            <strong><%= bread.title %></strong><%= bread.message %>
+          </li>
+        <% }) %>
+        </ul>
+      </main>
+
+      <%- include('../partials/footer.ejs') %>
+
+  </body>
+
+  </html>
